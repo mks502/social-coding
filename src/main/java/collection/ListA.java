@@ -4,6 +4,7 @@ public class ListA {
 	public Object[] elements = new Object[10];
 	public boolean readOnly;
 	public int size = 0;
+	private static final int STORE_SIZE_INCREMENT = 10;
 
 	public void add(Object element) {
 		if (!readOnly) {
