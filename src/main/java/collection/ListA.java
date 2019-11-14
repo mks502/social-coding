@@ -11,7 +11,7 @@ public class ListA {
 			int newSize = size + 1;
 			
 			if ( newSize > elements.length) {
-				Object[] newElements = new Object[elements.length + 10];
+				Object[] newElements = new Object[elements.length + STORE_SIZE_INCREMENT];
 				for (int i = 0; i < size; i++) {
 					newElements[i] = elements[i];
 				}
